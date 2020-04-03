@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       {
-        contacts.map(contact => <Contact {...contact} />)
+        contacts.map(contact => <Contact key={contact.name} {...contact} />)
       }
     </div>
   );
